@@ -19,7 +19,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <h1>Sale Quote Wizard</h1>
+      <div className='main-heading'>Sale Quote Wizard</div>
       <TabComponent heightAdjustMode='Auto'>
         <TabItemsDirective>
           {
