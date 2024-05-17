@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import { TabComponent, TabItemDirective, TabItemsDirective } from '@syncfusion/ej2-react-navigations';
+import React, { useEffect, useState } from 'react';
+import CustomerInformation from './Components/CustomerInformation';
+import Forecasting from './Components/Forecasting';
+import Notes from './Components/Notes';
+import QuoteProducts from './Components/QuoteProducts';
+import SelectProducts from './Components/SelectProducts';
+import Summary from './Components/Summary';
 
 function App() {
+  const tabData = [
+    { header: { text: "1. Customer Information" }, content: <CustomerInformation /> },
+    { header: { text: "2. Forecasting" }, content: <Forecasting /> },
+    { header: { text: "3. Notes" }, content: <Notes /> },
+    { header: { text: "4. Select Products" }, content: <SelectProducts /> },
+    { header: { text: "5. Quote Products" }, content: <QuoteProducts /> },
+    { header: { text: "6. Summary" }, content: <Summary /> }
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Sale Quote Wizard</h1>
+      <TabComponent heightAdjustMode='Auto'>
+        <TabItemsDirective>
+          {
+            tabData.map((tab, index) =>
+              <TabItemDirective
+                key={index}
+                header={tab.header}
+                content={() => tab.content}
+              />
+            )
+          }
+
+
+        </TabItemsDirective>
+      </TabComponent>
     </div>
   );
 }

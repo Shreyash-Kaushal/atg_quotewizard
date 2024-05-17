@@ -1,0 +1,31 @@
+.parent-container {
+    padding: 20px;
+}
+.container {
+    margin-bottom: 20px;
+}
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.input-container .MuiTextField-root {
+    flex: 1 1 calc(50% - 16px);
+    min-width: 200px; 
+}
+.button-container {
+    text-align: right;
+}
+.heading-div{
+    font-size: 20px;
+    margin-top: 20px;  
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+@media (max-width: 600px) {
+    .input-container .MuiTextField-root {
+        flex: 1 1 100%;
+    }
+}
