@@ -8,6 +8,8 @@
     "@mui/material": "^5.15.18",
     "@mui/x-date-pickers": "^7.5.0",
     "@syncfusion/ej2-react-calendars": "^25.2.4",
+    "@syncfusion/ej2-react-dropdowns": "^25.2.5",
+    "@syncfusion/ej2-react-grids": "^25.2.5",
     "@syncfusion/ej2-react-inputs": "^25.2.3",
     "@syncfusion/ej2-react-navigations": "^25.2.4",
     "@testing-library/jest-dom": "^5.17.0",

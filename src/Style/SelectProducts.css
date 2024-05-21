@@ -1,0 +1,23 @@
+.checkbox-container{
+display: flex;
+margin-bottom: 30px;
+}
+
+.e-multiselect.e-input-group {
+   margin-right: 20px;
+}
+
+.e-dropdownbase{
+    font-size: 17px;
+}
+
+.search-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serial-div{
+    display: flex;
+    align-items: center;
+}
