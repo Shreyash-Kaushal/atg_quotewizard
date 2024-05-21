@@ -7,10 +7,14 @@ margin-bottom: 30px;
    margin-right: 20px;
 }
 
-.e-dropdownbase{
+.e-multiselect.e-input-group .e-dropdownbase{
     font-size: 17px;
+    font-weight: 500;
 }
 
+.e-lastrowcell{
+    font-size: 17px;
+}
 .search-div{
     display: flex;
     align-items: center;
