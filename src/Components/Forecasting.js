@@ -7,7 +7,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import FormControl from '@mui/material/FormControl';
 import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
 import '../Style/Forecasting.css';
-function Forecasting() {
+function Forecasting({ onNext, onBack }) {
     return (
         <div className="parent-container">
             <div className='container'>
@@ -102,8 +102,8 @@ function Forecasting() {
                     </div>
                 </div>
                 <div className="button-container">
-                    <Button variant="contained">Back</Button>
-                    <Button variant="contained">Next</Button>
+                    <Button variant="contained" onClick={onBack}>Back</Button>
+                    <Button variant="contained" onClick={onNext}>Next</Button>
                 </div>
 
 

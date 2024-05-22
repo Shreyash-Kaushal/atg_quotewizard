@@ -5,7 +5,7 @@ import { Page, Sort } from '@syncfusion/ej2-react-grids';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import '../Style/SelectProducts.css'
-function SelectProducts() {
+function SelectProducts({ onNext, onBack }) {
     const pageSettings = { pageSize: 6 };
     const sampleManufacturerData = [
         { Id: 'Bimbox', Game: 'Bimbox' },
@@ -65,8 +65,8 @@ function SelectProducts() {
                     </GridComponent>
                 </div>
                 <div className="button-container">
-                    <Button variant="contained">Back</Button>
-                    <Button variant="contained">Next</Button>
+                    <Button variant="contained" onClick={onBack}>Back</Button>
+                    <Button variant="contained" onClick={onNext}>Next</Button>
                 </div>
             </div>
 

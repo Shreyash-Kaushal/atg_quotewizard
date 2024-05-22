@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
-function Notes() {
+function Notes({ onNext, onBack }) {
     return (
         <div className="parent-container">
             <div className='container'>
@@ -44,8 +44,8 @@ function Notes() {
                     </div>
                 </div>
                 <div className="button-container">
-                    <Button variant="contained">Back</Button>
-                    <Button variant="contained">Next</Button>
+                    <Button variant="contained" onClick={onBack}>Back</Button>
+                    <Button variant="contained" onClick={onNext}>Next</Button>
                 </div>
 
             </div>

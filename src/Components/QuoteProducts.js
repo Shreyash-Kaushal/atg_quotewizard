@@ -4,7 +4,7 @@ import { Page, Sort, Inject } from '@syncfusion/ej2-react-grids';
 import Button from '@mui/material/Button';
 import '../Style/QuoteProducts.css'
 
-function QuoteProducts() {
+function QuoteProducts({ onNext, onBack }) {
     const pageSettings = { pageSize: 6 };
     return (
         <div className="parent-container">
@@ -29,8 +29,8 @@ function QuoteProducts() {
                     Total : $0
                 </div>
                 <div className="button-container">
-                    <Button variant="contained">Back</Button>
-                    <Button variant="contained">Next</Button>
+                    <Button variant="contained" onClick={onBack}>Back</Button>
+                    <Button variant="contained" onClick={onNext}>Next</Button>
                 </div>
             </div>
         </div>

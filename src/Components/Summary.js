@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../Style/Summary.css';
 import Button from '@mui/material/Button';
 
-function Summary() {
+function Summary({ onBack }) {
     return (
         <div className="parent-container">
             <div className='container'>
@@ -44,7 +44,7 @@ function Summary() {
 
                 </div>
                 <div className="button-container">
-                    <Button variant="contained">Back</Button>
+                    <Button variant="contained" onClick={onBack}>Back</Button>
                     <Button variant="contained">Update</Button>
                 </div>
             </div>

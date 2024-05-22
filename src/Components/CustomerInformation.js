@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import '../Style/CustomerInformation.css'
 
-function CustomerInformation() {
+function CustomerInformation({onNext}) {
     return (
         <>
 
@@ -53,7 +53,7 @@ function CustomerInformation() {
                         </div>
                     </div>
                     <div className="button-container">
-                        <Button variant="contained">Next</Button>
+                        <Button variant="contained" onClick={onNext}>Next</Button>
                     </div>
                 </div>
 
